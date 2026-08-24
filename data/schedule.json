@@ -1,6 +1,6 @@
 {
   "source": "https://docs.google.com/spreadsheets/d/1waL56rvh-HMbbGhfuZDH4ydvoonSyrkjCFBKGjbnh1s/edit",
-  "generatedAt": "2026-08-24T18:06:58+00:00",
+  "generatedAt": "2026-08-24T18:24:04+00:00",
   "timezone": "America/Chicago",
   "slotMinutes": 30,
   "gridStart": "08:00",
@@ -53,6 +53,17 @@
   ],
   "days": {
     "Monday": [
+      {
+        "person": "Nidhi",
+        "kind": "work",
+        "title": "JPM 1000",
+        "location": "",
+        "start": "08:00",
+        "end": "18:00",
+        "startMinutes": 480,
+        "endMinutes": 1080,
+        "endEstimated": false
+      },
       {
         "person": "Rithwik",
         "kind": "work",
@@ -187,6 +198,17 @@
       }
     ],
     "Tuesday": [
+      {
+        "person": "Nidhi",
+        "kind": "work",
+        "title": "JPM 1000",
+        "location": "",
+        "start": "08:00",
+        "end": "18:00",
+        "startMinutes": 480,
+        "endMinutes": 1080,
+        "endEstimated": false
+      },
       {
         "person": "Abhiram",
         "kind": "class",
@@ -410,6 +432,17 @@
     ],
     "Wednesday": [
       {
+        "person": "Nidhi",
+        "kind": "work",
+        "title": "JPM 1000",
+        "location": "",
+        "start": "08:00",
+        "end": "18:00",
+        "startMinutes": 480,
+        "endMinutes": 1080,
+        "endEstimated": false
+      },
+      {
         "person": "Rithwik",
         "kind": "work",
         "title": "AA 1000 INP",
@@ -554,6 +587,17 @@
       }
     ],
     "Thursday": [
+      {
+        "person": "Nidhi",
+        "kind": "work",
+        "title": "JPM 1000",
+        "location": "",
+        "start": "08:00",
+        "end": "18:00",
+        "startMinutes": 480,
+        "endMinutes": 1080,
+        "endEstimated": false
+      },
       {
         "person": "Abhiram",
         "kind": "class",
@@ -787,6 +831,17 @@
       }
     ],
     "Friday": [
+      {
+        "person": "Nidhi",
+        "kind": "work",
+        "title": "JPM 1000",
+        "location": "",
+        "start": "08:00",
+        "end": "18:00",
+        "startMinutes": 480,
+        "endMinutes": 1080,
+        "endEstimated": false
+      },
       {
         "person": "Rithwik",
         "kind": "work",
