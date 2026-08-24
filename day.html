@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day Schedule &middot; Schedule Viewer</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗓️</text></svg>" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">SV</div>
+        <div>
+          <h1 id="title">Day Schedule</h1>
+          <p class="sub" id="sub">Loading&hellip;</p>
+        </div>
+      </div>
+      <div class="clock">
+        <div class="time" id="clock">--:--</div>
+        <div class="date" id="date"></div>
+      </div>
+    </header>
+
+    <nav class="nav" id="nav"></nav>
+
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Show only these people&hellip;" aria-label="Filter people" />
+    </div>
+
+    <section class="board-scroll"><div class="board" id="board"></div></section>
+    <section class="daylist" id="daylist"></section>
+
+    <footer id="footer"></footer>
+  </div>
+
+  <script type="module" src="./assets/day.js"></script>
+</body>
+</html>

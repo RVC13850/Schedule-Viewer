@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live Dashboard &middot; Schedule Viewer</title>
+  <meta name="description" content="Live view of who is in class right now and when they get out." />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗓️</text></svg>" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">SV</div>
+        <div>
+          <h1>Live Dashboard</h1>
+          <p class="sub" id="sub">Loading&hellip;</p>
+        </div>
+      </div>
+      <div class="clock">
+        <div class="time" id="clock">--:--</div>
+        <div class="date" id="date"></div>
+      </div>
+    </header>
+
+    <nav class="nav" id="nav"></nav>
+
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Filter by name, class or building&hellip;" aria-label="Filter people" />
+      <label class="toggle"><input type="checkbox" id="busy-only" /> In class only</label>
+    </div>
+
+    <section class="summary" id="summary"></section>
+    <section class="grid" id="cards"></section>
+
+    <footer id="footer"></footer>
+  </div>
+
+  <script type="module" src="./assets/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Intermediate spreadsheet download from tools/build_data.py
+tools/.workbook.xlsx
+*.xlsx
+
+# Editors
+.vscode/
+.idea/
+*.swp
