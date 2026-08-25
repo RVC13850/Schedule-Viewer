@@ -45,6 +45,7 @@ SCHOOLS = {
     "Aaryaa": "Carnegie Mellon",
     "Rithwik": "American Airlines",
     "Nidhi": "JPMC",
+    "Krigga": "UTD",
 }
 
 ICONS = {
@@ -68,8 +69,8 @@ FIXED_BLOCKS = {
 }
 
 # Classes whose real times the spreadsheet's 30-minute grid cannot express, as
-# (person, days, title, room, start, end). These REPLACE that person's sheet column, so
-# delete a person's rows here once the sheet alone is good enough.
+# (person, days, title, room, start, end[, kind]). These REPLACE that person's sheet column,
+# so delete a person's rows here once the sheet alone is good enough.
 EXTRA_EVENTS = [
     ("Mansi", ["Tuesday", "Thursday"], "KIN 106C", "BEL 348", "09:00", "10:30"),
     ("Mansi", ["Tuesday", "Thursday"], "NTR 306", "", "12:30", "14:00"),
@@ -80,6 +81,14 @@ EXTRA_EVENTS = [
     ("Suchit", ["Monday", "Tuesday", "Wednesday"], "Contracts", "TNH 2.139", "14:30", "15:37"),
     ("Suchit", ["Thursday"], "Legal Analysis & Comm", "TNH 3.127", "14:30", "15:37"),
     ("Suchit", ["Friday"], "Legal Analysis & Comm", "TNH 3.127", "11:50", "12:57"),
+    ("Krigga", ["Monday"], "Work", "", "08:00", "12:30", "work"),
+    ("Krigga", ["Monday"], "Work", "", "13:00", "17:00", "work"),
+    ("Krigga", ["Tuesday"], "CLDP 3394", "CB 1.219", "11:30", "12:45"),
+    ("Krigga", ["Tuesday", "Thursday"], "PSY 2314", "GR 3.420", "14:30", "15:45"),
+    ("Krigga", ["Tuesday", "Thursday"], "NSC 4351", "FO 2.702", "16:30", "17:45"),
+    ("Krigga", ["Wednesday"], "Killing Rats", "", "13:00", "16:00", "work"),
+    ("Krigga", ["Thursday"], "Killing Rats", "", "10:00", "14:00", "work"),
+    ("Krigga", ["Friday"], "Killing Rats", "", "09:00", "15:00", "work"),
 ]
 
 OVERRIDDEN_PEOPLE = {row[0] for row in EXTRA_EVENTS}
@@ -354,7 +363,8 @@ def main() -> int:
 
     tmp.unlink(missing_ok=True)
 
-    for person, on_days, title, room, start, end in EXTRA_EVENTS:
+    for person, on_days, title, room, start, end, *extra in EXTRA_EVENTS:
+        kind = extra[0] if extra else ("work" if person in WORK_PEOPLE else "class")
         if person not in people_order:
             people_order.append(person)
         for d in on_days:
@@ -362,7 +372,7 @@ def main() -> int:
                 continue
             days[d].append(apply_school_rules({
                 "person": person,
-                "kind": "work" if person in WORK_PEOPLE else "class",
+                "kind": kind,
                 "title": title,
                 "location": room,
                 "start": start,

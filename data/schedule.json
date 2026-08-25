@@ -16,7 +16,8 @@
     "Rithwik",
     "Nidhi",
     "Aaryaa",
-    "Suchit"
+    "Suchit",
+    "Krigga"
   ],
   "schools": {
     "Abhiram": "UTD",
@@ -29,7 +30,8 @@
     "Rithwik": "American Airlines",
     "Nidhi": "JPMC",
     "Aaryaa": "Carnegie Mellon",
-    "Suchit": "UT Austin"
+    "Suchit": "UT Austin",
+    "Krigga": "UTD"
   },
   "icons": {
     "Abhiram": "assets/icons/UTD.svg.webp",
@@ -42,7 +44,8 @@
     "Rithwik": "assets/icons/aa.png",
     "Nidhi": "assets/icons/jpmc.png",
     "Aaryaa": "assets/icons/cmu.png",
-    "Suchit": "assets/icons/UT.svg.webp"
+    "Suchit": "assets/icons/UT.svg.webp",
+    "Krigga": "assets/icons/UTD.svg.webp"
   },
   "dayOrder": [
     "Monday",
@@ -53,6 +56,17 @@
   ],
   "days": {
     "Monday": [
+      {
+        "person": "Krigga",
+        "kind": "work",
+        "title": "Work",
+        "location": "",
+        "start": "08:00",
+        "end": "12:30",
+        "startMinutes": 480,
+        "endMinutes": 750,
+        "endEstimated": false
+      },
       {
         "person": "Nidhi",
         "kind": "work",
@@ -95,6 +109,17 @@
         "end": "14:30",
         "startMinutes": 780,
         "endMinutes": 870,
+        "endEstimated": false
+      },
+      {
+        "person": "Krigga",
+        "kind": "work",
+        "title": "Work",
+        "location": "",
+        "start": "13:00",
+        "end": "17:00",
+        "startMinutes": 780,
+        "endMinutes": 1020,
         "endEstimated": false
       },
       {
@@ -353,6 +378,17 @@
         "endEstimated": false
       },
       {
+        "person": "Krigga",
+        "kind": "class",
+        "title": "CLDP 3394",
+        "location": "CB 1.219",
+        "start": "11:30",
+        "end": "12:45",
+        "startMinutes": 690,
+        "endMinutes": 765,
+        "endEstimated": false
+      },
+      {
         "person": "Mansi",
         "kind": "class",
         "title": "NTR 306",
@@ -397,6 +433,17 @@
         "endEstimated": false
       },
       {
+        "person": "Krigga",
+        "kind": "class",
+        "title": "PSY 2314",
+        "location": "GR 3.420",
+        "start": "14:30",
+        "end": "15:45",
+        "startMinutes": 870,
+        "endMinutes": 945,
+        "endEstimated": false
+      },
+      {
         "person": "Rishna",
         "kind": "class",
         "title": "CS 6360",
@@ -427,6 +474,17 @@
         "end": "17:15",
         "startMinutes": 960,
         "endMinutes": 1035,
+        "endEstimated": false
+      },
+      {
+        "person": "Krigga",
+        "kind": "class",
+        "title": "NSC 4351",
+        "location": "FO 2.702",
+        "start": "16:30",
+        "end": "17:45",
+        "startMinutes": 990,
+        "endMinutes": 1065,
         "endEstimated": false
       }
     ],
@@ -484,6 +542,17 @@
         "end": "14:30",
         "startMinutes": 780,
         "endMinutes": 870,
+        "endEstimated": false
+      },
+      {
+        "person": "Krigga",
+        "kind": "work",
+        "title": "Killing Rats",
+        "location": "",
+        "start": "13:00",
+        "end": "16:00",
+        "startMinutes": 780,
+        "endMinutes": 960,
         "endEstimated": false
       },
       {
@@ -698,6 +767,17 @@
         "endEstimated": false
       },
       {
+        "person": "Krigga",
+        "kind": "work",
+        "title": "Killing Rats",
+        "location": "",
+        "start": "10:00",
+        "end": "14:00",
+        "startMinutes": 600,
+        "endMinutes": 840,
+        "endEstimated": false
+      },
+      {
         "person": "Sashaank",
         "kind": "class",
         "title": "CS 4394",
@@ -786,6 +866,17 @@
         "endEstimated": false
       },
       {
+        "person": "Krigga",
+        "kind": "class",
+        "title": "PSY 2314",
+        "location": "GR 3.420",
+        "start": "14:30",
+        "end": "15:45",
+        "startMinutes": 870,
+        "endMinutes": 945,
+        "endEstimated": false
+      },
+      {
         "person": "Rishna",
         "kind": "class",
         "title": "CS 6360",
@@ -828,6 +919,17 @@
         "startMinutes": 960,
         "endMinutes": 1125,
         "endEstimated": false
+      },
+      {
+        "person": "Krigga",
+        "kind": "class",
+        "title": "NSC 4351",
+        "location": "FO 2.702",
+        "start": "16:30",
+        "end": "17:45",
+        "startMinutes": 990,
+        "endMinutes": 1065,
+        "endEstimated": false
       }
     ],
     "Friday": [
@@ -840,6 +942,17 @@
         "end": "18:00",
         "startMinutes": 480,
         "endMinutes": 1080,
+        "endEstimated": false
+      },
+      {
+        "person": "Krigga",
+        "kind": "work",
+        "title": "Killing Rats",
+        "location": "",
+        "start": "09:00",
+        "end": "15:00",
+        "startMinutes": 540,
+        "endMinutes": 900,
         "endEstimated": false
       },
       {
