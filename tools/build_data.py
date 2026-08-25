@@ -66,6 +66,40 @@ UTD_CLASS_MINUTES = 75
 FIXED_BLOCKS = {
     ("Swayam", "CS 6301"): ("13:00", "15:45"),
     ("Sashaank", "ARTS 3375"): ("16:00", "18:45"),
+    ("Anveetha", "HONS 3116"): ("09:00", "09:50"),
+    ("Rithwik", "AA 1000 INP"): ("09:00", "17:00"),
+}
+
+# Course codes the sheet records wrong.
+TITLE_FIXES = {
+    ("Sashaank", "CS 4375"): "CS 4384",
+    ("Sashaank", "CS 4394"): "CS 4393",
+    ("Nidhi", "JPM 1000"): "JPMC 1000",
+}
+
+# Rooms the sheet only records as a building.
+ROOM_FIXES = {
+    ("Anveetha", "HONS 3116"): "AD 2.238",
+    ("Anveetha", "CS 4352"): "GR 4.428",
+    ("Abhiram", "CS 6375"): "ECSS 2.412",
+    ("Rishna", "CS 6363"): "JO 4.102",
+    ("Sreevasan", "CS 6363"): "JO 4.102",
+    ("Sashaank", "CS 4371"): "FN 2.102",
+    ("Sashaank", "CS 4384"): "GR 3.420",
+    ("Abhiram", "CS 6301"): "ECSS 2.305",
+    ("Rishna", "CS 6301"): "ECSS 2.305",
+    ("Sreevasan", "CS 6301"): "ECSS 2.305",
+    ("Rishna", "CS 6360"): "ECSS 2.306",
+    ("Sreevasan", "CS 6326"): "GR 4.428",
+    ("Sashaank", "CS 4393"): "CR 1.202",
+    ("Swayam", "CS 6364"): "ECSS 2.311",
+    ("Swayam", "CS 6314"): "ECSS 2.410",
+    ("Anveetha", "MATH 4301"): "FN 2.214",
+    ("Anveetha", "CS 4365"): "ECSS 2.415",
+    ("Nidhi", "JPMC 1000"): "Plano, TX",
+    ("Rithwik", "AA 1000 WFH"): "Irving, TX",
+    ("Rithwik", "AA 1000 INP"): "Fort Worth, TX",
+    ("Sashaank", "ARTS 3375"): "ATC 1.802",
 }
 
 # Classes whose real times the spreadsheet's 30-minute grid cannot express, as
@@ -73,7 +107,7 @@ FIXED_BLOCKS = {
 # so delete a person's rows here once the sheet alone is good enough.
 EXTRA_EVENTS = [
     ("Mansi", ["Tuesday", "Thursday"], "KIN 106C", "BEL 348", "09:00", "10:30"),
-    ("Mansi", ["Tuesday", "Thursday"], "NTR 306", "", "12:30", "14:00"),
+    ("Mansi", ["Tuesday", "Thursday"], "NTR 306", "Home", "12:30", "14:00"),
     ("Mansi", ["Tuesday", "Thursday"], "CS 378", "GDC 5.302", "14:00", "15:30"),
     ("Mansi", ["Monday", "Wednesday", "Friday"], "CS 371L", "RLP 0.128", "13:00", "14:00"),
     ("Suchit", ["Tuesday", "Wednesday", "Thursday"], "Civil Procedure", "TNH 2.123", "10:30", "11:37"),
@@ -214,6 +248,12 @@ def from_hhmm(value: str) -> int:
 
 def apply_school_rules(event):
     """The spreadsheet grid is 30-minute, so real class lengths come from these rules."""
+    title = TITLE_FIXES.get((event["person"], event["title"]))
+    if title:
+        event["title"] = title
+    room = ROOM_FIXES.get((event["person"], event["title"]))
+    if room:
+        event["location"] = room
     fixed = FIXED_BLOCKS.get((event["person"], event["title"]))
     if fixed:
         event["startMinutes"], event["endMinutes"] = from_hhmm(fixed[0]), from_hhmm(fixed[1])

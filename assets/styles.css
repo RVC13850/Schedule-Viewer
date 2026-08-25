@@ -469,13 +469,16 @@ input[type="search"]:focus {
   font-variant-numeric: tabular-nums;
 }
 
-.board .ev.short {
+.board .ev.short,
+.board .ev.tiny {
   padding: 3px 8px;
   font-size: 11.5px;
 }
 
-.board .ev.short small,
 .board .ev.short .t { display: none; }
+
+.board .ev.tiny small,
+.board .ev.tiny .t { display: none; }
 
 .board .nowline {
   grid-column: 2 / -1;
