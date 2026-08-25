@@ -57,8 +57,11 @@ function renderBoard(people, now) {
       const length = (e.endMinutes - e.startMinutes) / data.slotMinutes;
       const row = Math.floor(offset) + 2;
       const span = Math.max(1, Math.ceil(offset + length) - Math.floor(offset));
-      parts.push(`<div class="ev${length <= 1 ? " tiny" : length <= 2 ? " short" : ""}" style="grid-column:${idx + 2};grid-row:${row} / span ${span};margin-top:${
-        ((offset % 1) * SLOT_PX + 1).toFixed(1)}px;height:${(length * SLOT_PX - 2).toFixed(1)}px"
+      const height = length * SLOT_PX - 2;
+      // Drop the lines that would not fit in the block's height.
+      const fit = height >= 58 ? "" : height >= 48 ? " short" : height >= 36 ? " mini" : " tiny";
+      parts.push(`<div class="ev${fit}" style="grid-column:${idx + 2};grid-row:${row} / span ${span};margin-top:${
+        ((offset % 1) * SLOT_PX + 1).toFixed(1)}px;height:${height.toFixed(1)}px"
         title="${escapeHtml(person)} — ${escapeHtml(e.title)} ${formatTime(e.startMinutes)}–${formatTime(e.endMinutes)}">
         <b>${escapeHtml(e.title)}</b>
         ${e.location ? `<small>${escapeHtml(e.location)}</small>` : ""}

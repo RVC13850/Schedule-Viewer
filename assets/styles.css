@@ -470,12 +470,16 @@ input[type="search"]:focus {
 }
 
 .board .ev.short,
+.board .ev.mini,
 .board .ev.tiny {
   padding: 3px 8px;
   font-size: 11.5px;
+  line-height: 1.15;
 }
 
-.board .ev.short .t { display: none; }
+.board .ev.short .t { margin-top: 0; }
+
+.board .ev.mini .t { display: none; }
 
 .board .ev.tiny small,
 .board .ev.tiny .t { display: none; }
