@@ -1,6 +1,6 @@
 {
   "source": "https://docs.google.com/spreadsheets/d/1waL56rvh-HMbbGhfuZDH4ydvoonSyrkjCFBKGjbnh1s/edit",
-  "generatedAt": "2026-08-24T18:24:04+00:00",
+  "generatedAt": "2026-08-31T00:55:59+00:00",
   "timezone": "America/Chicago",
   "slotMinutes": 30,
   "gridStart": "08:00",
@@ -8,7 +8,7 @@
   "people": [
     "Abhiram",
     "Rishna",
-    "Sreevasan",
+    "Pissleryahu",
     "Sashaank",
     "Swayam",
     "Anveetha",
@@ -22,7 +22,7 @@
   "schools": {
     "Abhiram": "UTD",
     "Rishna": "UTD",
-    "Sreevasan": "UTD",
+    "Pissleryahu": "UTD",
     "Sashaank": "UTD",
     "Swayam": "UTD",
     "Anveetha": "UTD",
@@ -36,7 +36,7 @@
   "icons": {
     "Abhiram": "assets/icons/UTD.svg.webp",
     "Rishna": "assets/icons/UTD.svg.webp",
-    "Sreevasan": "assets/icons/UTD.svg.webp",
+    "Pissleryahu": "assets/icons/UTD.svg.webp",
     "Sashaank": "assets/icons/UTD.svg.webp",
     "Swayam": "assets/icons/UTD.svg.webp",
     "Anveetha": "assets/icons/UTD.svg.webp",
@@ -70,8 +70,8 @@
       {
         "person": "Nidhi",
         "kind": "work",
-        "title": "JPMC 1000",
-        "location": "Plano, TX",
+        "title": "JPM 1000 INP",
+        "location": "",
         "start": "08:00",
         "end": "18:00",
         "startMinutes": 480,
@@ -82,11 +82,22 @@
         "person": "Rithwik",
         "kind": "work",
         "title": "AA 1000 WFH",
-        "location": "Home",
+        "location": "Irving, TX",
         "start": "09:00",
         "end": "17:00",
         "startMinutes": 540,
         "endMinutes": 1020,
+        "endEstimated": false
+      },
+      {
+        "person": "Mansi",
+        "kind": "class",
+        "title": "TA Duties (Hold 311 Office Hours)",
+        "location": "GDC 3rd Floor",
+        "start": "10:00",
+        "end": "11:30",
+        "startMinutes": 600,
+        "endMinutes": 690,
         "endEstimated": false
       },
       {
@@ -167,7 +178,7 @@
         "endEstimated": false
       },
       {
-        "person": "Rishna",
+        "person": "Pissleryahu",
         "kind": "class",
         "title": "CS 6363",
         "location": "JO 4.102",
@@ -178,7 +189,7 @@
         "endEstimated": false
       },
       {
-        "person": "Sreevasan",
+        "person": "Rishna",
         "kind": "class",
         "title": "CS 6363",
         "location": "JO 4.102",
@@ -226,8 +237,8 @@
       {
         "person": "Nidhi",
         "kind": "work",
-        "title": "JPMC 1000",
-        "location": "Plano, TX",
+        "title": "JPM 1000 INP",
+        "location": "",
         "start": "08:00",
         "end": "18:00",
         "startMinutes": 480,
@@ -246,7 +257,7 @@
         "endEstimated": false
       },
       {
-        "person": "Rishna",
+        "person": "Pissleryahu",
         "kind": "class",
         "title": "CS 6301",
         "location": "ECSS 2.305",
@@ -257,7 +268,7 @@
         "endEstimated": false
       },
       {
-        "person": "Sreevasan",
+        "person": "Rishna",
         "kind": "class",
         "title": "CS 6301",
         "location": "ECSS 2.305",
@@ -367,10 +378,10 @@
         "endEstimated": false
       },
       {
-        "person": "Sreevasan",
+        "person": "Krigga",
         "kind": "class",
-        "title": "CS 6326",
-        "location": "GR 4.428",
+        "title": "CLDP 3394",
+        "location": "CB 1.219",
         "start": "11:30",
         "end": "12:45",
         "startMinutes": 690,
@@ -378,10 +389,10 @@
         "endEstimated": false
       },
       {
-        "person": "Krigga",
+        "person": "Pissleryahu",
         "kind": "class",
-        "title": "CLDP 3394",
-        "location": "CB 1.219",
+        "title": "CS 6326",
+        "location": "GR 4.428",
         "start": "11:30",
         "end": "12:45",
         "startMinutes": 690,
@@ -466,6 +477,17 @@
         "endEstimated": false
       },
       {
+        "person": "Mansi",
+        "kind": "class",
+        "title": "TA Duties (Attend CS 311 Lecture)",
+        "location": "GDC 2.216",
+        "start": "15:30",
+        "end": "17:00",
+        "startMinutes": 930,
+        "endMinutes": 1020,
+        "endEstimated": false
+      },
+      {
         "person": "Anveetha",
         "kind": "class",
         "title": "CS 4365",
@@ -492,8 +514,8 @@
       {
         "person": "Nidhi",
         "kind": "work",
-        "title": "JPMC 1000",
-        "location": "Plano, TX",
+        "title": "JPM 1000 INP",
+        "location": "",
         "start": "08:00",
         "end": "18:00",
         "startMinutes": 480,
@@ -600,7 +622,7 @@
         "endEstimated": false
       },
       {
-        "person": "Rishna",
+        "person": "Pissleryahu",
         "kind": "class",
         "title": "CS 6363",
         "location": "JO 4.102",
@@ -611,7 +633,7 @@
         "endEstimated": false
       },
       {
-        "person": "Sreevasan",
+        "person": "Rishna",
         "kind": "class",
         "title": "CS 6363",
         "location": "JO 4.102",
@@ -659,8 +681,8 @@
       {
         "person": "Nidhi",
         "kind": "work",
-        "title": "JPMC 1000",
-        "location": "Plano, TX",
+        "title": "JPM 1000 WFH",
+        "location": "",
         "start": "08:00",
         "end": "18:00",
         "startMinutes": 480,
@@ -679,7 +701,7 @@
         "endEstimated": false
       },
       {
-        "person": "Rishna",
+        "person": "Pissleryahu",
         "kind": "class",
         "title": "CS 6301",
         "location": "ECSS 2.305",
@@ -690,7 +712,7 @@
         "endEstimated": false
       },
       {
-        "person": "Sreevasan",
+        "person": "Rishna",
         "kind": "class",
         "title": "CS 6301",
         "location": "ECSS 2.305",
@@ -811,7 +833,7 @@
         "endEstimated": false
       },
       {
-        "person": "Sreevasan",
+        "person": "Pissleryahu",
         "kind": "class",
         "title": "CS 6326",
         "location": "GR 4.428",
@@ -899,6 +921,17 @@
         "endEstimated": false
       },
       {
+        "person": "Mansi",
+        "kind": "class",
+        "title": "TA Duties (Attend CS 311 Lecture)",
+        "location": "GDC 2.216",
+        "start": "15:30",
+        "end": "17:00",
+        "startMinutes": 930,
+        "endMinutes": 1020,
+        "endEstimated": false
+      },
+      {
         "person": "Anveetha",
         "kind": "class",
         "title": "CS 4365",
@@ -936,8 +969,8 @@
       {
         "person": "Nidhi",
         "kind": "work",
-        "title": "JPMC 1000",
-        "location": "Plano, TX",
+        "title": "JPM 1000 WFH",
+        "location": "",
         "start": "08:00",
         "end": "18:00",
         "startMinutes": 480,
@@ -959,7 +992,7 @@
         "person": "Rithwik",
         "kind": "work",
         "title": "AA 1000 WFH",
-        "location": "Home",
+        "location": "Irving, TX",
         "start": "09:00",
         "end": "17:00",
         "startMinutes": 540,
@@ -978,6 +1011,17 @@
         "endEstimated": false
       },
       {
+        "person": "Mansi",
+        "kind": "class",
+        "title": "Teach CS 311 Discussion",
+        "location": "GDC 1.304",
+        "start": "10:00",
+        "end": "11:00",
+        "startMinutes": 600,
+        "endMinutes": 660,
+        "endEstimated": false
+      },
+      {
         "person": "Suchit",
         "kind": "class",
         "title": "Legal Analysis & Comm",
@@ -986,6 +1030,17 @@
         "end": "12:57",
         "startMinutes": 710,
         "endMinutes": 777,
+        "endEstimated": false
+      },
+      {
+        "person": "Mansi",
+        "kind": "class",
+        "title": "Teach CS 311 Discussion",
+        "location": "RLP 1.102",
+        "start": "12:00",
+        "end": "13:00",
+        "startMinutes": 720,
+        "endMinutes": 780,
         "endEstimated": false
       },
       {
@@ -1014,7 +1069,7 @@
         "person": "Swayam",
         "kind": "class",
         "title": "CS 6301",
-        "location": "ECSS 2.306",
+        "location": "",
         "start": "13:00",
         "end": "15:45",
         "startMinutes": 780,

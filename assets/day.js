@@ -1,7 +1,7 @@
 import {
   loadSchedule, nowIn, toMinutes, formatTime, formatDuration, orgIcon,
   eventsFor, escapeHtml, renderNav, renderFooter,
-} from "./common.js";
+} from "./common.js?v=2";
 
 const SLOT_PX = 26;
 

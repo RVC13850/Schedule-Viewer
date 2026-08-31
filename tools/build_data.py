@@ -31,12 +31,12 @@ DAY_ORDER = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
 SLOT_MINUTES = 30
 
 # Display names that differ from the column headers in the spreadsheet.
-RENAME = {"Govind": "Mansi"}
+RENAME = {"Govind": "Mansi", "Sreevasan": "Pissleryahu"}
 
 SCHOOLS = {
     "Abhiram": "UTD",
     "Rishna": "UTD",
-    "Sreevasan": "UTD",
+    "Pissleryahu": "UTD",
     "Sashaank": "UTD",
     "Swayam": "UTD",
     "Anveetha": "UTD",
@@ -83,14 +83,14 @@ ROOM_FIXES = {
     ("Anveetha", "CS 4352"): "GR 4.428",
     ("Abhiram", "CS 6375"): "ECSS 2.412",
     ("Rishna", "CS 6363"): "JO 4.102",
-    ("Sreevasan", "CS 6363"): "JO 4.102",
+    ("Pissleryahu", "CS 6363"): "JO 4.102",
     ("Sashaank", "CS 4371"): "FN 2.102",
     ("Sashaank", "CS 4384"): "GR 3.420",
     ("Abhiram", "CS 6301"): "ECSS 2.305",
     ("Rishna", "CS 6301"): "ECSS 2.305",
-    ("Sreevasan", "CS 6301"): "ECSS 2.305",
+    ("Pissleryahu", "CS 6301"): "ECSS 2.305",
     ("Rishna", "CS 6360"): "ECSS 2.306",
-    ("Sreevasan", "CS 6326"): "GR 4.428",
+    ("Pissleryahu", "CS 6326"): "GR 4.428",
     ("Sashaank", "CS 4393"): "CR 1.202",
     ("Swayam", "CS 6364"): "ECSS 2.311",
     ("Swayam", "CS 6314"): "ECSS 2.410",
@@ -107,6 +107,10 @@ ROOM_FIXES = {
 # so delete a person's rows here once the sheet alone is good enough.
 EXTRA_EVENTS = [
     ("Mansi", ["Tuesday", "Thursday"], "KIN 106C", "BEL 348", "09:00", "10:30"),
+    ("Mansi", ["Monday"], "TA Duties (Hold 311 Office Hours)", "GDC 3rd Floor", "10:00", "11:30"),
+    ("Mansi", ["Tuesday", "Thursday"], "TA Duties (Attend CS 311 Lecture)", "GDC 2.216", "15:30", "17:00"),
+    ("Mansi", ["Friday"], "Teach CS 311 Discussion", "GDC 1.304", "10:00", "11:00"),
+    ("Mansi", ["Friday"], "Teach CS 311 Discussion", "RLP 1.102", "12:00", "13:00"),
     ("Mansi", ["Tuesday", "Thursday"], "NTR 306", "Home", "12:30", "14:00"),
     ("Mansi", ["Tuesday", "Thursday"], "CS 378", "GDC 5.302", "14:00", "15:30"),
     ("Mansi", ["Monday", "Wednesday", "Friday"], "CS 371L", "RLP 0.128", "13:00", "14:00"),

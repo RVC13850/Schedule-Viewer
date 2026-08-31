@@ -1,7 +1,7 @@
 import {
   loadSchedule, nowIn, formatTime, formatDuration, initials, orgIcon,
   eventsFor, personStatus, escapeHtml, renderNav, renderFooter,
-} from "./common.js";
+} from "./common.js?v=2";
 
 const SOON_MINUTES = 30;
 
